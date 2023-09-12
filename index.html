@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital clock</title>
+    <title>Herry O'clock</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="btn">
+    <h1>Herry O'Clock</h1>
+    <h2>Meet the clock that will redefine how you experience time. Explore our unique and exceptional clock, designed to elevate your space and keep you on schedule.</h2>
+    <button class="changeColorBtn">Change Color</button>
+  </div>
     <div class="clock">
       <div id="time">
           <div class="circle" style="--clr:#add8e6">
@@ -48,42 +53,7 @@
           <span style="--i:11;"><b>11</b></span>
           <span style="--i:12;"><b>12</b></span>
       </div>
-    </div>
-    <script>
-      setInterval(()=>{
-        let hh = document.getElementById('hh');
-        let mm = document.getElementById('mm');
-        let ss = document.getElementById('ss');
-
-        let sec_dot = document.querySelector('.sec_dot');
-        let min_dot = document.querySelector('.min_dot');
-        let hr_dot = document.querySelector('.hr_dot');
-
-        let hr = document.querySelector("#hr");
-        let mn = document.querySelector("#mn");
-        let sc = document.querySelector("#sc");
-        
-        let h = new Date().getHours();
-        let m = new Date().getMinutes();
-        let s = new Date().getSeconds();
-        
-        hh.style.strokeDashoffset = 510 - (510 * h) / 12;
-        mm.style.strokeDashoffset = 630 - (630 * m) / 60;
-        ss.style.strokeDashoffset = 760 - (760 * s) / 60;
-
-        // sec_dot.style.transform = `rotate(${s * 6}deg)`;
-        // min_dot.style.transform = `rotateZ(${m * 6}deg)`;
-        // hr_dot.style.transform = `rotateZ(${h * 30}deg)`;
-
-        // hr_dot.style.transform = `rotateZ(${(h * 30) + (m / 2)}deg)`;
-        // min_dot.style.transform = `rotateZ(${(m * 6) + (s / 10)}deg)`;
-        // sec_dot.style.transform = `rotateZ(${s * 6}deg)`;
-
-        hr.style.transform = `rotateZ(${h * 30}deg)`;
-        sc.style.transform = `rotateZ(${s * 6}deg)`;
-        mn.style.transform = `rotateZ(${m * 6}deg)`;
-
-      })
-    </script>
+    </div>    
+    <script src="clock.js"></script>
 </body>
 </html>
