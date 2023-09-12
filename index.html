@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herry O'clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="btn">
+    <h1>Herry O'Clock</h1>
+    <h2>Meet the clock that will redefine how you experience time. Explore our unique and exceptional clock, designed to elevate your space and keep you on schedule.</h2>
+    <button class="changeColorBtn">Change Color</button>
+  </div>
+    <div class="clock">
+      <div id="time">
+          <div class="circle" style="--clr:#add8e6">
+            <div class="dots sec_dot">
+             <svg>
+                <circle cx="120" cy="120" r="120" id="ss"></circle>
+             </svg>
+            </div>
+          </div>
+
+          <div class="circle" style="--clr:#FF5800">
+            <div class="dots min_dot">
+             <svg>
+                <circle cx="100" cy="100" r="100" id="mm"></circle>
+             </svg>
+            </div>
+          </div>
+
+          <div class="circle" style="--clr:#FFA500">
+            <div class="dots hr_dot">
+             <svg>
+                <circle cx="80" cy="80" r="80" id="hh"></circle>
+             </svg>
+            </div>
+          </div>
+          <div class="niddles niddle1" style="--clr2: #add8e6;" id="sc"><i></i></div>
+          <div class="niddles niddle2" style="--clr2: #FF5800;" id="mn"><i></i></div>
+          <div class="niddles niddle3" style="--clr2: #FFA500;" id="hr"><i></i></div>
+          <span style="--i:1;"><b>1</b></span>
+          <span style="--i:2;"><b>2</b></span>
+          <span style="--i:3;"><b>3</b></span>
+          <span style="--i:4;"><b>4</b></span>
+          <span style="--i:5;"><b>5</b></span>
+          <span style="--i:6;"><b>6</b></span>
+          <span style="--i:7;"><b>7</b></span>
+          <span style="--i:8;"><b>8</b></span>
+          <span style="--i:9;"><b>9</b></span>
+          <span style="--i:10;"><b>10</b></span>
+          <span style="--i:11;"><b>11</b></span>
+          <span style="--i:12;"><b>12</b></span>
+      </div>
+    </div>    
+    <script src="clock.js"></script>
+</body>
+</html>
