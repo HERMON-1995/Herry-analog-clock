@@ -29,7 +29,7 @@
 
 # 📖 [Herry O'clock] <a name="about-project"></a>
 
-**[Herry O'clock]** is a Single Page App (SPA) website for all fans of time keepers that allows users to keep track of time.
+**Herry O'clock** is a Single Page App (SPA) website for all fans of time keepers that allows users to keep track of time.
 
 ## 🛠 Built With <a name="built-with"></a>
 
